@@ -1,0 +1,94 @@
+
+  /* button {
+    margin: 20px;
+  } */
+  .custom-btn {
+    color: #000;
+    /* font-family: 'Lato', sans-serif; */
+    font-weight: 1000;
+    background: transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  
+  
+  
+  /* 15 */
+  .sign-in {
+    background: linear-gradient(to bottom left, #0C97FA , #16E1F5);
+    border: none;
+    z-index: 1;
+  }
+  .sign-in:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 5px;
+    /* background-color: #663dff; */
+    /* box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease; */
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+    transition: all 0.3s ease;
+  }
+  .sign-in:hover {
+    color: white;
+  }
+  .sign-in:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  .sign-in:active {
+    top: 2px;
+  }
+  
+  
+  /* 16 */
+  .sign-up {
+    background: linear-gradient(to bottom right, #0C97FA , #16E1F5);
+    border: none;
+    z-index: 1;
+  }
+  .sign-up:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* direction: rtl; */
+    z-index: -1;
+    border-radius: 5px;
+    /* background-color: #663dff; */
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+    transition: all 0.3s ease;
+  }
+  .sign-up:hover {
+    color: white;
+  }
+  .sign-up:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+  }
+  .sign-up:active {
+    top: 2px;
+  }

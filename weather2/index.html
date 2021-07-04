@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="font-logo.css" rel="stylesheet">
+    <link href="button.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body class="container-color">
+    <div id="container">
+        <div id="header">
+            <div id="bar-header">
+                <div class="top">
+                    <!--Logo-->      
+                    <div class="logo"><img src="/Images/Logo1.png" alt=""></div>
+                    <div class="name">
+                        <h1>
+                            WEATHER
+                        </h1>
+                    </div>
+                    <!--Button dang nhap & dang ki-->
+                    <div class="btn">
+                        <button class="custom-btn sign-in">Sign-in</button>
+                        <button class="custom-btn sign-up">Sign-up</button> 
+                    </div>
+                </div>
+    
+                <!--Menu-->
+                <nav class="nav-menu">
+                    <div class="item">
+                        <a href="#footer">News</a>
+                    </div>
+                    
+                    <div class="item">
+                        <a href="#header">Weather</a>
+                    </div>
+    
+                    <!--Button ca nhan hoa-->
+                    <div>
+                        <button class="personal"><a>Personalized</a></button>
+                    </div>
+                </nav>
+            </div>
+
+            <!--Thong tin du bao thoi tiet-->        
+            <div id="content-header">
+                <!--Tim kiem vi tri-->
+                <div>
+                    <input type="text" placeholder="Search here...">
+                </div>
+                <div class="forecast">
+                    <!--Chi tiet thong tin du bao-->        
+                    <div class="forecast-infor">
+                        <h2>Location name</h2>
+                        
+                        <div class="btn-temp">
+                            <button>°F</button>
+                            <button>°C</button>
+                        </div>
+                        
+                        <div class="status">
+
+                            <div class="main-icon">ICON</div>
+
+                            <div class="temp-number"><p>18°C</p></div>
+
+                            <div class="text-weather"></div>
+                        </div>
+
+                        <div class="detail">
+                            <ul>
+                                <li>
+                                    <i></i>FEEL LIKE
+                                </li>
+                                <li>
+                                    <i></i>WIND
+                                </li>
+                                <li>
+                                    <i></i>VISON
+                                </li>
+                                <li>
+                                    <i></i>HUMIDITY
+                                </li>
+                                <li>
+                                    <i></i>PRESSURE
+                                </li>
+                                <li>
+                                    <i></i>DEWPOINT
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!--Danh sach du bao thoi tiet 10 ngay toi-->
+                    
+                    <div class="forecast-tenday">
+                        <h2>FORECAST FOR THE NEXT 10 DAYS</h2>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+
+                    <div class="forecast-locations">
+                        <h2>FORCEST LOCATION USER INTERESTED</h2>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--Danh sach du bao thoi tiet cac vi tri quan tam-->        
+            <div></div>
+        </div>
+
+        <div id="footer">
+            <div class="space"></div>
+            <div class="news">
+                <h2>WEATHER NEWS</h2>
+                <ul>
+                    <li class="news-big">
+                        <img title="" src="/Images/News01.jpg" alt="Image1">
+                        <a href="https://www.msn.com/vi-vn/news/national/d%E1%BB%B1-b%C3%A1o-th%E1%BB%9Di-ti%E1%BA%BFt-3-7-n%E1%BA%AFng-n%C3%B3ng-gay-g%E1%BA%AFt-ti%E1%BA%BFp-t%E1%BB%A5c-b%E1%BB%A7a-v%C3%A2y-b%E1%BA%AFc-v%C3%A0-trung-b%E1%BB%99/ar-AALIocC?ocid=winp1taskbar#image=1" target="_blank">Dự báo thời tiết 3/7: Nắng nóng gay gắt tiếp tục bủa vây Bắc và Trung Bộ</a>
+                    </li>
+                    <li class="news-small">
+                        <img title="" src="/Images/News02.jpg" alt="Image2">
+                        <a href="https://www.msn.com/vi-vn/news/national/n%E1%BA%AFng-n%C3%B3ng-k%C3%A9o-d%C3%A0i-nguy-c%C6%A1-ch%C3%A1y-r%E1%BB%ABng-r%E1%BA%A5t-cao-%E1%BB%9F-qu%E1%BA%A3ng-nam/ar-AALInrC?ocid=winp1taskbar#image=1" target="_blank">Nắng nóng kéo dài, nguy cơ cháy rừng rất cao ở Quảng Nam</a>
+                    </li>
+                    <li class="news-small">
+                        <img title="" src="/Images/News03.jpg" alt="Image3">
+                        <a href="https://www.msn.com/vi-vn/news/national/d%E1%BB%B1-b%C3%A1o-th%E1%BB%9Di-ti%E1%BA%BFt-3-7-cu%E1%BB%91i-tu%E1%BA%A7n-mi%E1%BB%81n-b%E1%BA%AFc-v%E1%BA%ABn-n%E1%BA%AFng-n%C3%B3ng-gay-g%E1%BA%AFt-nhi%E1%BB%87t-t%C4%83ng/ar-AALIF47?ocid=winp1taskbar#image=1" target="_blank">Dự báo thời tiết 3.7: Cuối tuần, miền Bắc vẫn nắng nóng gay gắt, nhiệt tăng</a>
+                    </li>
+                    <li class="news-small">
+                        <img title="" src="/Images/News04.jpg" alt="Image4">
+                        <a href="https://www.msn.com/vi-vn/news/national/c%C3%A1c-khu-v%E1%BB%B1c-tr%C3%AAn-c%E1%BA%A3-n%C6%B0%E1%BB%9Bc-ti%E1%BA%BFp-t%E1%BB%A5c-n%E1%BA%AFng-n%C3%B3ng-c%C3%B3-n%C6%A1i-tr%C3%AAn-39-%C4%91%E1%BB%99-c/ar-AALIA5Z?ocid=winp1taskbar#image=1" target="_blank">Các khu vực trên cả nước tiếp tục nắng nóng, có nơi trên 39 độ C</a>
+                    </li>
+                    <li class="news-small">
+                        <img title="" src="/Images/News05.jpg" alt="Image5">
+                        <a href="https://www.msn.com/vi-vn/news/national/bi%E1%BB%83n-%C4%91%C3%B4ng-s%E1%BA%AFp-%C4%91%C3%B3n-%C3%A1p-th%E1%BA%A5p-nhi%E1%BB%87t-%C4%91%E1%BB%9Bi-c%E1%BA%A3-n%C6%B0%E1%BB%9Bc-m%C6%B0a-d%C3%B4ng-nhi%E1%BB%81u-ng%C3%A0y/ar-AALIEAM?ocid=winp1taskbar&fullscreen=true#image=1" target="_blank">Biển Đông sắp đón áp thấp nhiệt đới, cả nước mưa dông nhiều ngày</a>
+                    </li>
+                    <li class="news-small">
+                        <img title="" src="/Images/News06.jpg" alt="Image6">
+                        <a href="https://www.msn.com/vi-vn/news/mustread/b%C3%A1n-%C4%91%E1%BA%A3o-nam-c%E1%BB%B1c-ghi-nh%E1%BA%ADn-m%E1%BB%A9c-nhi%E1%BB%87t-cao-k%E1%BB%B7-l%E1%BB%A5c-18-3-%C4%91%E1%BB%99-c/ar-AALH1eB?ocid=winp1taskbar#image=1" target="_blank">Bán đảo Nam Cực ghi nhận mức nhiệt cao kỷ lục - 18,3 độ C</a>
+                    </li>
+                    <li class="news-small">
+                        <img title="" src="/Images/News07.jpg" alt="Image7">
+                        <a href="https://www.msn.com/vi-vn/news/national/%C4%91i%E1%BB%83m-danh-lo%E1%BA%A1t-s%E1%BA%A3n-ph%E1%BA%A9m-ph%E1%BB%A5c-v%E1%BB%A5-m%C3%B9a-n%E1%BA%AFng-n%C3%B3ng/ar-AALGIeA?ocid=winp1taskbar#image=1" target="_blank">Điểm danh loạt sản phẩm phục vụ mùa nắng nóng</a>
+                    </li>
+                    <li class="news-small">
+                        <img title="" src="/Images/News08.jpg" alt="Image8">
+                        <a href="https://www.msn.com/vi-vn/news/world/n%E1%BA%AFng-n%C3%B3ng-thi%C3%AAu-%C4%91%E1%BB%91t-b%E1%BA%AFc-m%E1%BB%B9-gi%C3%B3ng-h%E1%BB%93i-chu%C3%B4ng-c%E1%BA%A3nh-t%E1%BB%89nh/ar-AALGqwu?ocid=winp1taskbar&fullscreen=true#image=1" target="_blank">Nắng nóng thiêu đốt Bắc Mỹ gióng hồi chuông cảnh tỉnh</a>
+                    </li>
+                    <li class="news-big">
+                        <img title="" src="/Images/News09.jpg" alt="Image9">
+                        <a href="https://www.msn.com/vi-vn/news/world/t%C3%B2a-nh%C3%A0-%C4%91ang-x%C3%A2y-s%E1%BA%ADp-trong-c%C6%A1n-gi%C3%B4ng/ar-AALGYDM?ocid=winp1taskbar#image=1" target="_blank">Tòa nhà đang xây sập trong cơn giông</a>
+                    </li>
+                    <li class="news-small">
+                        <img title="" src="/Images/News10.jpg" alt="Image10">
+                        <a href="https://www.msn.com/vi-vn/news/national/t%E1%BB%AB-b%E1%BA%AFc-v%C3%B4-nam-n%E1%BA%AFng-n%C3%B3ng-gay-g%E1%BA%AFt-nhi%E1%BB%87t-%C4%91%E1%BB%99-cao-c%E1%BA%A3nh-b%C3%A1o-say-n%E1%BA%AFng-%C4%91%E1%BB%99t-qu%E1%BB%B5/ar-AALG2te?ocid=winp1taskbar#image=1" target="_blank">Từ Bắc vô Nam nắng nóng gay gắt, nhiệt độ cao, cảnh báo say nắng, đột quỵ</a>
+                    </li>
+                    <li class="news-small">
+                        <img title="" src="/Images/News11.jpg" alt="Image11">
+                        <a href="https://www.msn.com/vi-vn/news/national/n%E1%BA%AFng-n%C3%B3ng-%E1%BB%9F-c%C3%A1c-t%E1%BB%89nh-b%E1%BA%AFc-b%E1%BB%99-c%C3%B3-kh%E1%BA%A3-n%C4%83ng-k%C3%A9o-d%C3%A0i-%C4%91%E1%BA%BFn-ng%C3%A0y-4-7/ar-AALF7uq?ocid=winp1taskbar#image=1" target="_blank">Nắng nóng ở các tỉnh Bắc Bộ có khả năng kéo dài đến ngày 4/7</a>
+                    </li>
+                    <li class="news-small">
+                        <img title="" src="/Images/News12.jpg" alt="Image12">
+                        <a href="https://www.msn.com/vi-vn/news/national/chi%E1%BB%81u-t%E1%BB%91i-%C4%91%C3%AAm-1-7-h%C3%A0-n%E1%BB%99i-v%C3%A0-c%C3%A1c-khu-v%E1%BB%B1c-c%E1%BA%A3-n%C6%B0%E1%BB%9Bc-%C4%91%E1%BB%81u-c%C3%B3-m%C6%B0a-v%C3%A0-d%C3%B4ng/ar-AALEGWb?ocid=winp1taskbar#image=1" target="_blank">Chiều tối, đêm 1/7: Hà Nội và các khu vực cả nước đều có mưa và dông</a>
+                    </li>
+                    <li class="news-small">
+                        <img title="" src="/Images/News13.jpg" alt="Image13">
+                        <a href="https://www.msn.com/vi-vn/news/national/th%C3%B4ng-tin-m%E1%BB%9Bi-nh%E1%BA%A5t-v%E1%BB%81-%C4%91%E1%BB%A3t-n%E1%BA%AFng-n%C3%B3ng-gay-g%E1%BA%AFt-k%C3%A9o-d%C3%A0i-%E1%BB%9F-b%E1%BA%AFc-b%E1%BB%99-v%C3%A0-trung-b%E1%BB%99/ar-AALDOqR?ocid=winp1taskbar#image=1" target="_blank">Thông tin mới nhất về đợt nắng nóng gay gắt kéo dài ở Bắc Bộ và Trung Bộ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
