@@ -35,7 +35,7 @@
     background-color:rgba(255, 255, 255, 0.400);
     /* background: linear-gradient(240deg, rgba(50, 50, 150, 0.3), rgba(0, 0, 200, 0)); */
     width: 930px;
-    height: 1350px;
+    height: 1650px;
     margin-left: 170px;
     margin-right: 170px;
     padding: 0px 10px 0px 10px;
@@ -94,6 +94,7 @@
     width: 550px;
     margin-top: 10px;
 
+    font-style: italic;
     font-size: 45px;
     font-weight: 700;
     font-family: Arial;
@@ -132,10 +133,23 @@
     border-bottom-right-radius: 15px;
 }
 
+.nav-menu div:hover{
+    background: linear-gradient(#ED765E , #FEA858);
+    /* background: darkblue; */
+}
+
 .nav-menu div.item{
+    width: 100px;
+    border-radius: 5px;
     /* background-color: violet; */
+
+    /* border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px; */
+    
+    
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .nav-menu div.item a{
@@ -145,11 +159,11 @@
 
 .personal{
     height: 30px;
-    background-color: coral;
+    background: none;
     color: white;
     border: none;
     cursor: pointer;
-    padding: 5px 32px;
+    /* padding: 5px 32px; */
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -157,22 +171,97 @@
 
 #content-header{
     width: 100%;
-    height: 1200px;
+    height: 1500px;
     /* background-color: coral; */
     padding-top: 130px;
     /* border-radius: 20px; */
 }
 
 input{
-    width: 280px;
+    /* width: 280px;
     height: 30px;
     background-color:rgba(255, 255, 255, 0.800);
     border-radius: 20px;
     border: none;
     outline: none;
     padding-left: 15px ;
-    margin-top: 30px;
+    margin-top: 30px; */
 }
+
+.search-location{
+    width: 40%;
+    height: 50px;
+
+    /* background-color: rgb(62, 62, 65); */
+    margin-top: 30px; 
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search-location .search-input{
+    position: relative;
+    background: linear-gradient(to bottom left, #0C97FA , #16E1F5);
+    padding: 15px;
+    border-radius: 10px;
+    width: 5px;
+    transition: 0.5s;
+
+    
+}
+
+.search-location .search-input input{
+    width: 100%;
+    background: transparent;
+    
+    border: none;
+    outline: none;
+    color: #2B2B2B;
+    font-size: 17px;
+}
+
+.search-location .search-input input::placeholder{
+    color: rgb(139, 139, 139);
+}
+
+.search-location .search-button{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    background: linear-gradient(#ED765E , #FEA858);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    right: 24px;
+    /* box-shadow: 0 0 0 10px #FEA858; */
+
+    cursor: pointer;
+}
+
+.search-location .search-button img{
+    width: 22px;
+    height: 22px;
+    position: relative;
+}
+
+.search-location .search-button input{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    background-color:rgba(255, 255, 255, 0);
+    border: none;
+    position: absolute;
+    cursor: pointer;
+}
+
+.search-location:hover > .search-input{
+    width: 300px;
+}
+
 
 
 .forecast{
@@ -205,28 +294,45 @@ div .forecast div{
 .status {
     display: flex;
     width: 100%;
-    height: 250px;
-    margin-top: 7px;
+    height: 200px;
+    margin-top: 10px;
+    /* background-color: blue; */
+}
+
+.status img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .main-icon{
-    width: 30%;
-    height: 200px;
-    background: linear-gradient(to bottom left, #0C97FA , #16E1F5);;
-    border-radius: 5px;
+    width: 20%;
+    height: 150px;
+    background: linear-gradient(to bottom right, #0C97FA , #16E1F5);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    
 }
+
 .temp-number{
-    width: 30%;
-    height: 200px;
+    width: 25%;
+    height: 150px;
     background: linear-gradient(to bottom left, #0C97FA , #16E1F5);
-    border-radius: 5px;
+    /* border-radius: 5px; */
+    
+    font-size: 96px;
+    line-height: 96px;
+    color: white;
+    display: flex;
+    align-items: center;
 }
 
 .text-weather{
-    width: 100%;
-    height: 200px;
-    background: linear-gradient(to bottom left, #0C97FA , #16E1F5);
-    border-radius: 5px;
+    width: 51%;
+    height: 150px;
+    background: linear-gradient(to bottom right, #0C97FA , #16E1F5);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .detail{
@@ -249,6 +355,10 @@ div .forecast div{
     height: 100px;
     background: linear-gradient(to bottom left, #0C97FA , #16E1F5);
     border-radius: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .forecast-tenday ul{

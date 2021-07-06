@@ -1,16 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="style1.css" rel="stylesheet">
     <link href="font-logo.css" rel="stylesheet">
     <link href="button.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="container-color">
     <div id="container">
+
         <div id="header">
             <div id="bar-header">
                 <div class="top">
@@ -39,55 +42,77 @@
                     </div>
     
                     <!--Button ca nhan hoa-->
-                    <div>
+                    <div class="item">
                         <button class="personal"><a>Personalized</a></button>
                     </div>
                 </nav>
             </div>
+        </div>
+
+        <div id="content">
+            
 
             <!--Thong tin du bao thoi tiet-->        
             <div id="content-header">
                 <!--Tim kiem vi tri-->
-                <div>
-                    <input type="text" placeholder="Search here...">
-                </div>
+                <form id='searchForm' class = "search-location">
+                    
+                    
+                    
+                    <div class="search-input">
+                        <input type="text" id="txtSearchInput"placeholder="Search here...">
+                    </div>
+
+                    <div class="search-button">
+                        <!-- <i class="fas fa-search" id="btnSearch"></i> -->
+                        <img src="/Images/search.svg" alt="">
+                        <input type="submit" id="btnSearch" value="">
+                    </div>
+                </form>
+         
                 <div class="forecast">
                     <!--Chi tiet thong tin du bao-->        
                     <div class="forecast-infor">
-                        <h2>Location name</h2>
+                        <h2 id="location-name">Location name</h2>
                         
                         <div class="btn-temp">
-                            <button>°F</button>
-                            <button>°C</button>
+                            <form>
+                                <button type="submit" id="cencius">°C</button>
+                                <button type="submit" id="fahrenheit">°F</button>
+                            </form>
                         </div>
                         
                         <div class="status">
 
-                            <div class="main-icon">ICON</div>
+                            <div class="main-icon">
+                                <img id="weather-icon" src="">
+                            </div>
 
-                            <div class="temp-number"><p>18°C</p></div>
+                            <div class="temp-number" id="temp">
+                                <p>°C</p>
+                            </div>
 
                             <div class="text-weather"></div>
                         </div>
 
                         <div class="detail">
                             <ul>
-                                <li>
+                                <li id="feel-like">
                                     <i></i>FEEL LIKE
                                 </li>
-                                <li>
+                                <li id="wind">
                                     <i></i>WIND
                                 </li>
-                                <li>
+                                <li id="vision">
                                     <i></i>VISON
                                 </li>
-                                <li>
+                                <li id=humidity>
                                     <i></i>HUMIDITY
                                 </li>
-                                <li>
+                                <li id=pressure>
                                     <i></i>PRESSURE
                                 </li>
-                                <li>
+                                <li id=dew-point>
                                     <i></i>DEWPOINT
                                 </li>
                             </ul>
@@ -193,4 +218,5 @@
         </div>
     </div>
 </body>
+<script src="app.js"></script>
 </html>
