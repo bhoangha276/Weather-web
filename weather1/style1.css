@@ -54,29 +54,43 @@
 }
 
 #header{
-    background: #c471ed;
+    /* background: #c471ed; */
     width: 100%;
     /* height: 1650px; */
 }
 
 #bar-header{
-    position: fixed;
+    /* position: fixed; */
     z-index: 99;
     display: flex;
     width: 100%;
-    height: 120px;
+    height: 111px;
     /* background-color:white; */
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.600) 50%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.600) 10%, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 0.600) 10%, rgba(255, 255, 255, 0) 100%);
     justify-items:center ;
     flex-direction: column;
 }
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  /* padding-top: 102px; */
+}
+
+
 
 .top{
     display: flex;
     width: 100%;
     height:60px;
 
-    background-color:#00000050;
+    background-color:#00000000;
 }
 
 
@@ -140,11 +154,12 @@
 
     display: flex;
     justify-content: space-around;
+    z-index: 99;
 }
 
 .nav-menu div:hover{
-    background: linear-gradient(#00C3FF, #0077FF);
     /* background: darkblue; */
+    background: linear-gradient(#00C3FF, #0077FF);
 }
 
 .nav-menu div.item{
@@ -166,7 +181,7 @@
     color: white;
 }
 
-.personal{
+.item button{
     height: 30px;
     background: none;
     color: white;
@@ -176,6 +191,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    transition: 5s;
 }
 
 #content{
@@ -183,7 +199,6 @@
     /* background: linear-gradient(240deg, rgba(50, 50, 150, 0.3), rgba(0, 0, 200, 0)); */
     width: 930px;
     height: 1650px;
-    margin-top: 96px;
     margin-left: 170px;
     margin-right: 170px;
     padding: 0px 10px 0px 10px;
@@ -197,7 +212,6 @@
     width: 100%;
     height: 1500px;
     /* background-color: coral; */
-    padding-top: 15px;
     /* border-radius: 20px; */
 }
 
@@ -329,7 +343,7 @@ div .forecast div{
 
 .main-icon{
     width: 20%;
-    height: 150px;
+    height: 140px;
     /* background-color:rgba(255, 255, 255, 0.05); */
     background-color:#00000025;
     border-top-left-radius: 12px;
@@ -339,7 +353,7 @@ div .forecast div{
 
 .temp-number{
     width: 25%;
-    height: 150px;
+    height: 140px;
     background-color:#00000025;
     /* border-radius: 5px; */
     
@@ -352,7 +366,7 @@ div .forecast div{
 
 .text-weather{
     width: 55%;
-    height: 150px;
+    height: 140px;
     background-color:#00000025;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;

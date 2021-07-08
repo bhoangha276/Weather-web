@@ -26,24 +26,30 @@
                     </div>
                     <!--Button dang nhap & dang ki-->
                     <div class="btn">
-                        <button class="custom-btn sign-in">Sign-in</button>
-                        <button class="custom-btn sign-up">Sign-up</button> 
+                        <button class="custom-btn sign-in" onclick="">Sign-in</button>
+                        <button class="custom-btn sign-up" onclick="">Sign-up</button> 
                     </div>
                 </div>
     
                 <!--Menu-->
-                <nav class="nav-menu">
+                <nav class="nav-menu" id="nav-menu">
                     <div class="item">
-                        <a href="#footer">News</a>
+                        <button>
+                            <a href="#footer">News</a>
+                        </button>
                     </div>
                     
                     <div class="item">
-                        <a href="#header">Weather</a>
+                        <button>
+                            <a href="#header">Weather</a>
+                        </button>
                     </div>
 
                     <!--Button ca nhan hoa-->
                     <div class="item">
-                        <button class="personal"><a>Personalized</a></button>
+                        <button class="personal" onclick="">
+                            <a>Personalized</a>
+                        </button>
                     </div>
                 </nav>
             </div>
@@ -210,7 +216,7 @@
                     </li>
                     <li class="news-small">
                         <img title="" src="/Images/News12.jpg" alt="Image12">
-                        <a href="https://www.msn.com/vi-vn/news/national/chi%E1%BB%81u-t%E1%BB%91i-%C4%91%C3%AAm-1-7-h%C3%A0-n%E1%BB%99i-v%C3%A0-c%C3%A1c-khu-v%E1%BB%B1c-c%E1%BA%A3-n%C6%B0%E1%BB%9Bc-%C4%91%E1%BB%81u-c%C3%B3-m%C6%B0a-v%C3%A0-d%C3%B4ng/ar-AALEGWb?ocid=winp1taskbar#image=1" target="_blank">Chiều tối, đêm 1/7: Hà Nội và các khu vực cả nước đều có mưa và dông</a>
+                        <a href="https://www.msn.com/vi-vn/news/national/chi%E1%BB%81u-t%E1%BB%91i-%C4%91%C3%AAm-1-7-h%C3%A0-n%E1%BB%99i-v%C3%A0-c%C3%A1c-khu-v%E1%BB%B1c-c%E1%BA%A3-n%C6%B0%E1%BB%9Bc-%C4%91%E1%BB%81u-c%C3%B3-m%C6%B0a-v%C3%A0-d%C3%B4ng/ar-AALEGWb?ocid=winp1taskbar#image=1" target="_blank">Chiều tối, đêm 1/7: Hà Nội và các khu vực cả nước đều có mưa và giông</a>
                     </li>
                     <li class="news-small">
                         <img title="" src="/Images/News13.jpg" alt="Image13">
@@ -222,4 +228,5 @@
     </div>
 </body>
 <script src="app.js"></script>
+<script src="sticky-header.js"></script>
 </html>
