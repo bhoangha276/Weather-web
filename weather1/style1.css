@@ -10,9 +10,8 @@
     color: white;
     font-family: Arial, Helvetica, sans-serif; */
    
-    display: flex;
-    align-items: center;
-    justify-content: center; 
+    display: block;
+     
 
     position: static;
     height: 100%;
@@ -24,21 +23,29 @@
     color: blanchedalmond;
     /* background: linear-gradient(to bottom, #20202c 0%, #515175 100%); */
     
-    background: linear-gradient(rgb(48, 75, 137) 78.8866%, rgba(48, 75, 137, 0.992) 80.2946%,
+    /* background: linear-gradient(rgb(48, 75, 137) 78.8866%, rgba(48, 75, 137, 0.992) 80.2946%,
     rgba(48, 75, 137, 0.965) 81.7004%, rgba(48, 75, 137, 0.918) 83.1084%, rgba(48, 75, 137, 0.85) 84.5164%,
     rgba(48, 75, 137, 0.77) 85.9244%, rgba(48, 75, 137, 0.667) 87.3324%, rgba(48, 75, 137, 0.557) 88.7404%, 
     rgba(48, 75, 137, 0.443) 90.1462%, rgba(48, 75, 137, 0.333) 91.5542%, rgba(48, 75, 137, 0.23) 92.9622%, 
     rgba(48, 75, 137, 0.15) 94.3702%, rgba(48, 75, 137, 0.082) 95.7782%, rgba(48, 75, 137, 0.035) 97.184%, 
-    rgba(48, 75, 137, 0.008) 98.592%, rgba(48, 75, 137, 0) 100%);
+    rgba(48, 75, 137, 0.008) 98.592%, rgba(48, 75, 137, 0) 100%); */
+
+    background: linear-gradient(180deg, rgba(51, 91, 148, 1) 78.8866%, rgba(51, 91, 148, 0.991353) 80.2946%, 
+    rgba(51, 91, 148, 0.96449) 81.7004%, rgba(51, 91, 148, 0.91834) 83.1084%, rgba(51, 91, 148, 0.852589) 84.5164%, 
+    rgba(51, 91, 148, 0.768225) 85.9244%, rgba(51, 91, 148, 0.668116) 87.3324%, rgba(51, 91, 148, 0.557309) 88.7404%, 
+    rgba(51, 91, 148, 0.442691) 90.1462%, rgba(51, 91, 148, 0.331884) 91.5542%, rgba(51, 91, 148, 0.231775) 92.9622%, 
+    rgba(51, 91, 148, 0.147411) 94.3702%, rgba(51, 91, 148, 0.0816599) 95.7782%, rgba(51, 91, 148, 0.03551) 97.184%, 
+    rgba(51, 91, 148, 0.0086472) 98.592%, rgba(51, 91, 148, 0) 100%);
 }
 
 #container{
     /* background-color:#275aa6; */
-    /* background-image: url(/Images/background.jpg); */
-
+    background-image: url(/Images/background1.png);
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     
+    overflow: hidden;
 
     display: flex;
     justify-content: center;
@@ -58,8 +65,8 @@
     display: flex;
     width: 100%;
     height: 120px;
-    background-color: rgba(255, 255, 255, 0.600);
-    /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.600) 50%, rgba(255, 255, 255, 0) 100%); */
+    /* background-color:white; */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.600) 50%, rgba(255, 255, 255, 0) 100%);
     justify-items:center ;
     flex-direction: column;
 }
@@ -67,9 +74,9 @@
 .top{
     display: flex;
     width: 100%;
-    height:90px;
+    height:60px;
 
-    /* background: firebrick; */
+    background-color:#00000050;
 }
 
 
@@ -101,7 +108,7 @@
     font-weight: 700; */
     font-family: Arial;
     padding-top: 10px;
-    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+    text-shadow: 3px -3px 0px rgba(85, 85, 85, 0.431);
     
 }
 
@@ -173,21 +180,24 @@
 
 #content{
     /* background-color:rgba(255, 255, 255, 0.400); */
-    background: linear-gradient(240deg, rgba(50, 50, 150, 0.3), rgba(0, 0, 200, 0));
+    /* background: linear-gradient(240deg, rgba(50, 50, 150, 0.3), rgba(0, 0, 200, 0)); */
     width: 930px;
     height: 1650px;
+    margin-top: 96px;
     margin-left: 170px;
     margin-right: 170px;
     padding: 0px 10px 0px 10px;
     border-bottom-right-radius: 20px;
-
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    
 }
 
 #content-header{
     width: 100%;
     height: 1500px;
     /* background-color: coral; */
-    padding-top: 130px;
+    padding-top: 15px;
     /* border-radius: 20px; */
 }
 
@@ -206,8 +216,7 @@ input{
     width: 40%;
     height: 50px;
 
-    /* background-color: rgb(62, 62, 65); */
-    margin-top: 30px; 
+    /* background-color: rgb(62, 62, 65); */ 
 
     position: relative;
     display: flex;
@@ -307,7 +316,7 @@ div .forecast div{
 .status {
     display: flex;
     width: 100%;
-    height: 200px;
+    height: 170px;
     margin-top: 10px;
     /* background-color: blue; */
 }
@@ -321,16 +330,17 @@ div .forecast div{
 .main-icon{
     width: 20%;
     height: 150px;
-    background-color:rgba(255, 255, 255, 0.100);
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    /* background-color:rgba(255, 255, 255, 0.05); */
+    background-color:#00000025;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
     
 }
 
 .temp-number{
     width: 25%;
     height: 150px;
-    background-color:rgba(255, 255, 255, 0.100);
+    background-color:#00000025;
     /* border-radius: 5px; */
     
     font-size: 96px;
@@ -341,11 +351,11 @@ div .forecast div{
 }
 
 .text-weather{
-    width: 51%;
+    width: 55%;
     height: 150px;
-    background-color:rgba(255, 255, 255, 0.100);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    background-color:#00000025;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 
 .detail{
@@ -366,8 +376,8 @@ div .forecast div{
 .detail ul li{
     width: 180px;
     height: 100px;
-    background-color:rgba(255, 255, 255, 0.100);
-    border-radius: 20px;
+    background-color:#00000025;
+    border-radius: 12px;
     
     display: flex;
     justify-content: center;
@@ -392,9 +402,9 @@ div .forecast div{
 .forecast-tenday ul li{
     min-width: 170px;
     height: 200px;
-    background-color:rgba(255, 255, 255, 0.100);
+    background-color:#00000025;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 12px;
     margin-right: 20px; 
 } 
 
@@ -416,15 +426,15 @@ div .forecast div{
 .forecast-locations ul li{
     min-width: 170px;
     height: 200px;
-    background-color:rgba(255, 255, 255, 0.100);
+    background-color:#00000025;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 12px;
     margin-right: 20px;
 }
 
 #footer{
     /* background-color:rgba(255, 255, 255, 0.400); */
-    background: linear-gradient(240deg, rgba(0, 0, 200, 0), rgba(50, 50, 150, 0.3));
+    /* background: linear-gradient(240deg, rgba(0, 0, 200, 0), rgba(50, 50, 150, 0.3)); */
     width: 930px;
     height:1900px;
     margin-left: 170px;
@@ -454,20 +464,23 @@ div .forecast div{
 .news ul li{
     width: 300px;
     height: 300px;
-    background-image: linear-gradient(#12c2e9, #c471ed, #f64f59);
+    background-image: linear-gradient(to top , #1612e9, #ffffff00, #ffffff00);
     border-radius: 10px;
     /* margin-left: 7px; */
     cursor: pointer;
     position: relative;
+
 }
 
 
 .news ul li :hover{
     opacity: 0.5;
+    
 }
 
 .news ul li.news-big{
     width: 614px;
+    background-image: linear-gradient(to right , #124be9, #ffffff00, #ffffff00);
 }
 
 .news ul li img{
@@ -480,7 +493,8 @@ div .forecast div{
 }
 
 .news ul li a{
-    width: 285px;
+    width: 280px;
+    height: 50px;
     /* background-color: thistle; */
     color: white;
     font-size:17px;
@@ -496,19 +510,20 @@ div .forecast div{
 }
 
 .news ul li.news-small a{
-    height: 70px;
+    /* height: 70px; */
     
-    padding-top: 230px;
+    margin-top: 230px;
 }
 
 .news ul li a:hover{
     text-decoration: underline;
     opacity: 1;
+
 }
 
 .news ul li.news-big a{
-    height: 250px;
-    padding-bottom: 50px;
+    /* height: 250px; */
+    margin-top: 100px;
 
     align-items: center;
 }
