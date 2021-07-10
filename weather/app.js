@@ -16,16 +16,16 @@ async function getWeather() {
     document.getElementById("location-name").innerHTML = name;
     if (units == 'metric') {
         document.getElementById("temp").innerHTML = `${temp}°C`;
-        document.getElementById("feel-like").innerHTML = `Feels like: ${Math.floor(main.feels_like)} °C`;
+        document.getElementById("feel-like").innerHTML = ` ${Math.floor(main.feels_like)} °C`;
     } else {
         document.getElementById("temp").innerHTML = `${temp}°F`;
-        document.getElementById("feel-like").innerHTML = `Feels like: ${Math.floor(main.feels_like)} °F`;
+        document.getElementById("feel-like").innerHTML = ` ${Math.floor(main.feels_like)} °F`;
     }
-    document.getElementById("wind").innerHTML = `Wind: ${windSpeedPerHour} Km/h`;
-    document.getElementById("vision").innerHTML = `Vision: ${vision} Km`;
-    document.getElementById("humidity").innerHTML = `Humidity: ${main.humidity} %`;
-    document.getElementById("pressure").innerHTML = `Pressure: ${main.pressure} hPa`;
-    document.getElementById("pressure").innerHTML = `Pressure: ${main.pressure} hPa`;
+    document.getElementById("wind").innerHTML = ` ${windSpeedPerHour} Km/h`;
+    document.getElementById("vision").innerHTML = ` ${vision} Km`;
+    document.getElementById("humidity").innerHTML = ` ${main.humidity}%`;
+    document.getElementById("pressure").innerHTML = ` ${main.pressure} hPa`;
+    document.getElementById("pressure").innerHTML = ` ${main.pressure} hPa`;
     let a = document.getElementById("weather-icon");
     a.setAttribute("src", iconURL);
 }
