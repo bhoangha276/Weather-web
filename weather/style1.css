@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    /* font-family: 'Hind Guntur', sans-serif; */
 }
 
 ::-webkit-scrollbar{
@@ -39,7 +40,7 @@
     margin: 0;
     padding: 0;
 
-    font-family: 'Quicksand', sans-serif;
+    font-family: Segoe UI,'Quicksand', sans-serif;
     color:whitesmoke;
     /* background: linear-gradient(to bottom, #20202c 0%, #515175 100%); */
     
@@ -93,6 +94,35 @@
     /* height: 1650px; */
 }
 
+#header1 {
+    /* color: #fff; */
+    /* padding-top: .5em; */
+    /* font-weight: 100; */
+    font-size: 270%;
+    display: flex;
+    justify-content: center;
+}
+/* .fa-sun-o:before {
+content: "\f185";
+} */
+
+.fa-spin {
+    -webkit-animation: fa-spin 10s infinite linear;
+    animation: fa-spin 45s infinite linear;
+}
+
+#wizcon {
+    font-size: 100%;
+    text-shadow: 1px 1px 29px yellow;
+    color: yellow;
+}
+
+#wizcon-2 {
+    font-size: 95%;
+    text-shadow: 1px 1px 29px rgba(25, 25, 112, 0.972);
+    color: midnightblue;
+}
+
 #bar-header{
     /* position: fixed; */
     z-index: 99;
@@ -100,7 +130,7 @@
     width: 100%;
     height: 111px;
     /* background-color:white; */
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.600) 10%, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 0.600) 10%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.600) 10%, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0.600) 10%, rgba(255, 255, 255, 0) 100%);
     justify-items:center ;
     flex-direction: column;
 }
@@ -152,10 +182,8 @@
     color: #00ecfdd7;
     width: 76%;
 
-    /* font-size: 45px;
-    font-weight: 700; */
-    font-family: Arial;
-    padding-top: 10px;
+    font-family: 'Nunito', sans-serif;
+    padding-top: 8px;
     text-shadow: 3px -3px 0px rgba(85, 85, 85, 0.431);
     
 }
@@ -181,7 +209,7 @@
 
 .nav-menu{
     width: 100%;
-    height: 30px;
+    height: 35px;
     /* background: linear-gradient(to bottom right, #4CA9CF, #292E91); */
     background: linear-gradient(to bottom right, #00C3FF, #0077FF);
 
@@ -214,18 +242,26 @@
 .nav-menu div.item a{
     text-decoration: none;
     color: white;
+    font-size: 15px;
     
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 35px;
+    padding-left: 45px;
     padding-right: 35px;
 
     position: relative;
     z-index: 10;
 }
 
+.nav-menu div.item i{
+    position: absolute;
+    margin-left: 10px;
+    
+}
+
 .item button{
-    height: 30px;
+    /* width: 100px; */
+    height: 35px;
     background: none;
     color: white;
     border: none;
@@ -245,7 +281,8 @@
     height: 1650px;
     margin-left: 170px;
     margin-right: 170px;
-    padding: 0px 10px 0px 10px;
+    padding-top: 30px;
+    /* padding: 0px 10px 0px 10px; */
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -272,7 +309,7 @@ input{
 
 .search-location{
     width: 40%;
-    height: 50px;
+    height: 40px;
 
     /* background-color: rgb(62, 62, 65); */ 
 
@@ -285,9 +322,9 @@ input{
 .search-location .search-input{
     position: relative;
     background-color:rgba(255, 255, 255, 0.900);
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
-    width: 5px;
+    width: 15px;
     transition: 0.5s;
 
 }
@@ -307,8 +344,8 @@ input{
 }
 
 .search-location .search-button{
-    width: 50px;
-    height:50px;
+    width: 45px;
+    height:45px;
     border-radius: 50%;
     background: linear-gradient(to bottom left, #00C3FF, #0077FF);
     display: flex;
@@ -329,8 +366,8 @@ input{
 }
 
 .search-location .search-button input{
-    width: 50px;
-    height:50px;
+    width: 40px;
+    height:40px;
     border-radius: 50%;
     background-color:rgba(255, 255, 255, 0);
     border: none;
