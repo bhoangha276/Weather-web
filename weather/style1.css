@@ -180,12 +180,37 @@ content: "\f185";
 .name{
     /* background-color: #c471ed; */
     color: #00ecfdd7;
-    width: 76%;
+    width: 71%;
 
     font-family: 'Nunito', sans-serif;
     padding-top: 8px;
     text-shadow: 3px -3px 0px rgba(85, 85, 85, 0.431);
     
+}
+
+.user{
+    background: burlywood;
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user button{
+    width: 48px;
+    height:48px;
+    position: relative;
+}
+
+.user-button{
+    
+}
+
+.avatar{
+    width: 32px;
+    height:32px;
+    margin: 8px;
+    background: crimson;
 }
 
 .btn{
@@ -308,7 +333,7 @@ input{
 }
 
 .search-location{
-    width: 40%;
+    width: 41%;
     height: 40px;
 
     /* background-color: rgb(62, 62, 65); */ 
@@ -323,8 +348,8 @@ input{
     position: relative;
     background-color:rgba(255, 255, 255, 0.900);
     padding: 10px;
-    border-radius: 10px;
-    width: 15px;
+    border-radius: 25px;
+    width: 300px;
     transition: 0.5s;
 
 }
@@ -332,7 +357,7 @@ input{
 .search-location .search-input input{
     width: 100%;
     background: transparent;
-    
+    margin-left: 8px;
     border: none;
     outline: none;
     color: #2B2B2B;
@@ -353,7 +378,7 @@ input{
     justify-content: center;
 
     position: relative;
-    right: 24px;
+    right: 25px;
     /* box-shadow: 0 0 0 10px #FEA858; */
 
     cursor: pointer;
@@ -375,9 +400,9 @@ input{
     cursor: pointer;
 }
 
-.search-location:hover > .search-input{
+/* .search-location:hover > .search-input{
     width: 300px;
-}
+} */
 
 
 
