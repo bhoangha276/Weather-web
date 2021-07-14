@@ -4,18 +4,18 @@
     /* font-family: 'Hind Guntur', sans-serif; */
 }
 
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
     width: 16px;
     
-}
+} */
 
-::-webkit-scrollbar-track{
+/* ::-webkit-scrollbar-track{
     border: 1px solid #232943;
     box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
-}
+} */
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(355deg, rgba(51, 91, 148, 1) 78.8866%, rgba(51, 91, 148, 0.991353) 80.2946%, 
+    background: linear-gradient(/*355deg,*/ rgba(51, 91, 148, 1) 78.8866%, rgba(51, 91, 148, 0.991353) 80.2946%, 
     rgba(51, 91, 148, 0.96449) 81.7004%, rgba(51, 91, 148, 0.91834) 83.1084%, rgba(51, 91, 148, 0.852589) 84.5164%, 
     rgba(51, 91, 148, 0.768225) 85.9244%, rgba(51, 91, 148, 0.668116) 87.3324%, rgba(51, 91, 148, 0.557309) 88.7404%, 
     rgba(51, 91, 148, 0.442691) 90.1462%, rgba(51, 91, 148, 0.331884) 91.5542%, rgba(51, 91, 148, 0.231775) 92.9622%, 
@@ -594,7 +594,7 @@ svg{
     display: flex;
     border-radius: 5px;
     overflow-x: scroll;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* flex-wrap: wrap; */
 }
 
