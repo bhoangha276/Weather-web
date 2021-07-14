@@ -35,8 +35,23 @@
 
                     <div class="user">
                         <button class="user-button" type="button" aria-label="Account Manager">
-                            <div class="avatar"></div>
+                            <div class="user-avatar">
+                                <span class="user-note">Account Manager</span>
+                                <img src="/Images/Ha.jpg" alt="">
+                            </div>
                         </button>
+
+                        <div class="user-body">
+                            <div class="body-container">
+                                <div class="currentAccount">
+
+                                </div>
+
+                                <div class="accountList">
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <!--Button dang nhap & dang ki-->
@@ -49,14 +64,14 @@
                 <!--Menu-->
                 <nav class="nav-menu" id="nav-menu">
                     <div class="item">
-                        <button type="button">
+                        <button class="btnMenu" type="button">
                             <i class="far fa-newspaper"></i>
                             <a href="#footer">News</a>
                         </button>
                     </div>
                     
                     <div class="item">
-                        <button type="button">
+                        <button class="btnMenu" type="button">
                             <i class="fas fa-cloud-sun"></i>
                             <a href="#header">Weather</a>
                         </button>
@@ -64,10 +79,16 @@
 
                     <!--Button ca nhan hoa-->
                     <div class="item">
-                        <button class="personal" type="button" onclick="">
+                        <button id="btnPersonal" class="personal btnMenu" type="button" onclick="showBodyBtnPerson()">
                             <i class="fas fa-address-card" ></i>
                             <a>Personalized</a>
                         </button>
+                        <div id="searchPerson" class="dropdown-content">
+                            <input type="search" placeholder="Search your country...">
+                            <!-- <input type="button" value="Save"> -->
+                            <button>Save</button>
+                
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -417,4 +438,5 @@
 <script src="/weather/app.js"></script>
 <script src="/weather/sticky-header.js"></script>
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="weather/person.js"></script>
 </html>
