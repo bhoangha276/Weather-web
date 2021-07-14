@@ -37,6 +37,7 @@ let btnTempF = document.getElementById("fahrenheit");
 
 btnSearch.addEventListener('click', function (e) {
     window.localStorage.setItem('city', searchInput.value);
+    console.log('1')
 });
 city = window.localStorage.getItem('city');
 
