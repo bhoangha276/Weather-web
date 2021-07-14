@@ -595,6 +595,7 @@ svg{
     border-radius: 5px;
     overflow-x: scroll;
     overflow: hidden;
+    /* flex-wrap: wrap; */
 }
 
 .forecast-tenday ul::-webkit-scrollbar{
@@ -608,6 +609,11 @@ svg{
     cursor: pointer;
     border-radius: 12px;
     margin-right: 20px; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 } 
 
 
@@ -645,6 +651,11 @@ svg{
     cursor: pointer;
     border-radius: 12px;
     margin-right: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
