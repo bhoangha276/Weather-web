@@ -83,11 +83,11 @@ async function getWeather(city) {
         document.getElementById("temp").innerHTML = `${temp}°F`;
         document.getElementById("feel-like").innerHTML = `${Math.floor(main.feels_like)}°F`;
     }
-    document.getElementById("wind").innerHTML = `${windSpeedPerHour}Km/h`;
-    document.getElementById("vision").innerHTML = `${vision}Km`;
+    document.getElementById("wind").innerHTML = `${windSpeedPerHour} Km/h`;
+    document.getElementById("vision").innerHTML = `${vision} Km`;
     document.getElementById("humidity").innerHTML = `${main.humidity}%`;
-    document.getElementById("pressure").innerHTML = `${main.pressure}hPa`;
-    document.getElementById("pressure").innerHTML = `${main.pressure}hPa`;
+    document.getElementById("pressure").innerHTML = `${main.pressure} hPa`;
+    document.getElementById("pressure").innerHTML = `${main.pressure} hPa`;
     let a = document.getElementById("weather-icon");
     a.setAttribute("src", iconURL);
     getWeatherDays(latitude, longitude);

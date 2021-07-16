@@ -599,6 +599,52 @@ svg{
 
     /* transform: translateX(311.25px); */
     transition: transform 0.8s ease 0s;
+
+    position: relative;
+}
+
+.forecast-tenday .groupBtn-scroll{
+    /* position: absolute;
+    display: flex;
+    align-content: space-between;
+    z-index: 10; */
+    
+}
+
+.button-scrollLeft{
+    position: absolute;
+    z-index: 11;
+    margin-top: 90px;
+    margin-right: 913px;
+    padding: 2px;
+
+    cursor: pointer;
+
+    background: none;
+    border: none;
+    color: white;
+}
+
+.button-scrollRight{
+    position: absolute;
+    z-index: 10;
+    margin-top: 90px;
+    margin-left: 913px;
+    padding: 2px;
+
+    cursor: pointer;
+
+    background: none;
+    border: none;
+    color: white;
+}
+
+.button-scrollLeft:hover{
+    background: rgba(255,255,255,.4);
+}
+
+.button-scrollRight:hover{
+    background: rgba(255,255,255,.4);
 }
 
 .forecast-tenday ul::-webkit-scrollbar{
@@ -619,14 +665,6 @@ svg{
     align-items: center;
     
 } 
-
-.button-scrollLeft{
-    /* position: absolute; */
-}
-
-.button-scrollRight{
-    /* position: absolute; */
-}
 
 #area-example-2 {
     height: 250px;
