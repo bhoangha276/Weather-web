@@ -672,13 +672,30 @@ svg{
     margin: 0 auto;
     border-radius: 12px;
     background-color:#00000025;
+
+    overflow: hidden;
     
-    overflow-x: scroll;
-    overflow-y: hidden;
+    /* overflow-x: scroll;
+    overflow-y: hidden; */
+}
+
+#area-example-2 tbody{
+    /* transform: translateX(0px); */
+    width: 1000px;
+}
+
+
+#area-example-2 tbody td{
+    transform: translateX(-35px);
+    font-size: small;
+}
+
+#area-example-2 tbody i{
+    margin-right: 2px;
 }
 
 #area-example-2 tbody tr td::before{
-    /* background: rgba(255, 255, 255, 0.2); */
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .forecast-locations ul{
