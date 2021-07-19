@@ -98,6 +98,7 @@
     /* color: #fff; */
     /* padding-top: .5em; */
     /* font-weight: 100; */
+
     font-size: 270%;
     display: flex;
     justify-content: center;
@@ -180,8 +181,8 @@ content: "\f185";
 .name{
     /* background-color: #c471ed; */
     color: #00ecfdd7;
-    width: 71%;
-
+    width: 90%;
+    
     font-family: 'Nunito', sans-serif;
     padding-top: 8px;
     text-shadow: 3px -3px 0px rgba(85, 85, 85, 0.431);
@@ -194,27 +195,39 @@ content: "\f185";
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .user button{
     width: 48px;
     height:48px;
     position: absolute;
-    cursor: pointer;
+    /* cursor: pointer; */
 
 
     background: none;
     border: none;
 }
 
-.user :hover > .user-note{
+/* .user :hover > .user-note{
+    overflow: visible;
+    width: 120px;
+    height: 20px;
+} */
+
+.user-button{
+    position: absolute;
+    cursor: pointer;
+}
+
+.user-button :hover > .user-note{
     overflow: visible;
     width: 120px;
     height: 20px;
 }
 
-.user-button{
-    
+.user :hover > .user-body{
+    visibility: visible;
 }
 
 .user-avatar{
@@ -224,22 +237,23 @@ content: "\f185";
     margin: 6px;
     /* background:darkred; */
 
+    position: relative;
 }
 
 
 .user-note{
     display: inline-block;
     position: absolute;
-    width: 1px;
-    height: 1px;
+    width: 0px;
+    height: 0px;
     overflow: hidden;
     color: #000;
     background: white;
     left: -35px;
-    top:52px;
-    z-index: 100;
+    top:46px;
+    z-index: 101;
 
-    
+    box-shadow: 3px 3px 0px rgba(85, 85, 85, 0.431);
 }
 
 .user-avatar img{
@@ -248,18 +262,130 @@ content: "\f185";
     border-radius: 50%;
 }
 
+.showUser{
+    visibility: hidden;
+}
+
 .user-body{
     /* inset: 48px auto auto -255px; */
+    width: 320px;
+    height: 240px;
+    box-shadow: 3px 3px 0px rgba(85, 85, 85, 0.431);
+
+    background: linear-gradient(to bottom right, #00C3FF, #0077FF);
+    border-radius: 5px;
+
+    display: inline-block;
+    position: absolute;
+    z-index: 100;
+    right: 30px;
+    top:53px;
     
+    /* visibility: hidden; */
+}
+
+.body-container{
+    margin-left: 8.45px;
+}
+
+.head{
+    display: flex;
+    
+}
+
+.nameMin{
+    
+    color: #00ecfdd7;
+    width: 59.1%;
+    font-size: xx-small;
+    font-family: 'Nunito', sans-serif;
+    padding-top: 8px;
+    text-shadow: 3px -3px 0px rgba(85, 85, 85, 0.431);
+
+    display: flex;
+    align-items: center;
+}
+
+.logoMin{
+    width: 50px;
+    height: 50px;
+}
+
+.btnSignOut{
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-style: groove;
+    border: none;
+    padding: 0px 11.45px 0px 11.45px;
+    color: whitesmoke;
+
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.btnSignOut:hover{
+    background: linear-gradient(#00c3ff, #0077FF);
+}
+
+.currentAccount{
+    width: 100%;
+    height: 130px;
+    
+    display: flex;
+    align-items: center;
+
+    font-size: 30px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.700);
+}
+
+.avatar{
+    width: 110px;
+    height: 88px;
+}
+
+.avatar img{
+    width: 88px;
+    height: 88px;
+}
+
+.accountList{
+    width: 100%;
+    height: 60px;
+    
+}
+
+.foot{
+    width: 320px;
+    height: 60px;
+    background:  #0077ff49;
+
+    margin-left: -8px;
+
+    display: flex;
+    align-items: center;
 
     
-    width: 320px;
-    box-shadow: 0 24px 54px rgb(0 0 0 / 15%), 0 4.5px 13.5px rgb(0 0 0 / 8%);
+    text-decoration: none;
+    color:whitesmoke;
+}
+
+.foot:hover{
+    background: linear-gradient(#00c3ff, #0077FF);
+}
+
+.icon-signIn{
+    width: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn{
     /* height: 125px; */
-    width: 20%;
+    width: 21%;
     /* background-color: darkviolet; */
 
     display: flex;
@@ -737,9 +863,9 @@ svg{
 
 
 a:-webkit-any-link {
-    color: -webkit-link;
     cursor: pointer;
-    text-decoration: underline;
+    /* color: -webkit-link; */
+    /* text-decoration: underline; */
 }
 
 .miniMap{

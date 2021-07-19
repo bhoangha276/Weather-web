@@ -30,35 +30,51 @@
                             <span id="box">B<span id="wizcon">
                                 <i class="fas fa-sun fa-spin" ></i></span>X</span><span id="wizcon-2">&nbsp <i class="fas fa-moon fa-sm"></i></span>HANNEL
                         </h1> -->
-                        <h1>WEATHER</h1>
+                        <h1>WEATHER BOX</h1>
                     </div>
 
                     <div class="user">
-                        <button class="user-button" type="button" aria-label="Account Manager">
+                        <button class="user-button" type="button" onclick="showBodyBtnAccount()">
                             <div class="user-avatar">
                                 <span class="user-note">Account Manager</span>
                                 <img src="/Images/Ha.jpg" alt="">
                             </div>
+
                         </button>
-
-                        <div class="user-body">
+                        <div id="btnAccount" class="user-body showUser">
                             <div class="body-container">
-                                <div class="currentAccount">
+                                <div class="head">
+                                    <div class="logo logoMin"><img src="/Images/Logo1.png" alt=""></div>
+                                    <div class="nameMin">
+                                        <h1>WEATHER BOX</h1>
+                                    </div>
+                                    <a class="btnSignOut" href="">Log out</a>
+                                </div>
 
+                                <div class="currentAccount">
+                                    <div class="user-avatar avatar">
+                                        <img src="/Images/Ha.jpg" alt="">
+                                    </div>
+                                    <div class="accountName">HoangHa</div>
                                 </div>
 
                                 <div class="accountList">
-
+                                    <a href="" class="foot">
+                                        <div class="icon-signIn">
+                                            <i class="far fa-user-circle fa-2x"></i>
+                                        </div>
+                                        <div>Sign in with another account</div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <!--Button dang nhap & dang ki-->
-                    <div class="btn">
+                    <!-- <div class="btn">
                         <button class="custom-btn sign-in" onclick="">Sign-in</button>
                         <button class="custom-btn sign-up" onclick="">Sign-up</button> 
-                    </div>
+                    </div> -->
                 </div>
     
                 <!--Menu-->
@@ -134,7 +150,7 @@
                             </div>
 
                             <div class="temp-number" id="temp">
-                                <p>°C</p>
+                                <p>18°C</p>
                             </div>
 
                             <div class="text-weather">
@@ -217,7 +233,7 @@
                     
                     <!--Danh sach du bao thoi tiet 10 ngay toi-->
                     <div class="forecast-tenday">
-                        <h2>FORECAST FOR THE NEXT 10 DAYS</h2>
+                        <h2>FORECAST FOR THE NEXT 7 DAYS</h2>
                         
                             <button id="slideLeft" class="button-scrollLeft" type="button">◄</button>
                             <button id="slideRight" class="button-scrollRight" type="button">►</button>
@@ -231,58 +247,40 @@
                                 <div id="minTemp1">Temp Min</div>
                             </li>
                             <li>
-                                <p id="date2">Day</p>
+                                <p id="date2">Day2</p>
                                 <img id="icon2" src="">
                                 <div id="maxTemp2">Temp Max</div>
                                 <div id="minTemp2">Temp Min</div>
                             </li>
                             <li>
-                                <p id="date3">Day</p>
+                                <p id="date3">Day3</p>
                                 <img id="icon3" src="">
                                 <div id="maxTemp3">Temp Max</div>
                                 <div id="minTemp3">Temp Min</div>
                             </li>
                             <li>
-                                <p id="date4">Day</p>
+                                <p id="date4">Day4</p>
                                 <img id="icon4" src="">
                                 <div id="maxTemp4">Temp Max</div>
                                 <div id="minTemp4">Temp Min</div>
                             </li>
                             <li>
-                                <p id="date5">Day</p>
+                                <p id="date5">Day5</p>
                                 <img id="icon5" src="">
                                 <div id="maxTemp5">Temp Max</div>
                                 <div id="minTemp5">Temp Min</div>
                             </li>
                             <li>
-                                <p id="date6">Day</p>
+                                <p id="date6">Day6</p>
                                 <img id="icon6" src="">
                                 <div id="maxTemp6">Temp Max</div>
                                 <div id="minTemp6">Temp Min</div>
                             </li>
                             <li>
-                                <p id="date7">Day</p>
+                                <p id="date7">Day7</p>
                                 <img id="icon7" src="">
                                 <div id="maxTemp7">Temp Max</div>
                                 <div id="minTemp7">Temp Min</div>
-                            </li>
-                            <li>
-                                <p id="date8">Day</p>
-                                <img id="icon8" src="">
-                                <div id="maxTemp8">Temp Max</div>
-                                <div id="minTemp8">Temp Min</div>
-                            </li>
-                            <li>
-                                <p id="date9">Day</p>
-                                <img id="icon9" src="">
-                                <div id="maxTemp9">Temp Max</div>
-                                <div id="minTemp9">Temp Min</div>
-                            </li>
-                            <li>
-                                <p id="date10">Day</p>
-                                <img id="icon10" src="">
-                                <div id="maxTemp10">Temp Max</div>
-                                <div id="minTemp10">Temp Min</div>
                             </li>
                         </ul>
                         
