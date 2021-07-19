@@ -45,6 +45,11 @@ async function getWeather(city, units) {
     let a = document.getElementById("weather-icon");
     a.setAttribute("src", iconURL);
     getWeatherDays(latitude, longitude, units);
+
+    let textStatus = weather[0].description;
+    textStatus = textStatus.charAt(0).toUpperCase() + textStatus.slice(1);
+    document.getElementById('textStatus').innerHTML = textStatus;
+    // console.log(textStatus);
 }
 
 let searchInput = document.getElementById("txtSearchInput");
@@ -204,3 +209,5 @@ function removeVietnameseTones(str) {
     str = str.replace(/!|@|%|\^|\*|\(|\)|\+|\=|\<|\>|\?|\/|,|\.|\:|\;|\'|\"|\&|\#|\[|\]|~|\$|_|`|-|{|}|\||\\/g, " ");
     return str;
 }
+
+
