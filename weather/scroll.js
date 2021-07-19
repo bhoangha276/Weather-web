@@ -6,4 +6,4 @@ const buttonRight = document.getElementById('slideRight');
     };
     buttonLeft.onclick = function () {
       document.getElementById('scroll').scrollLeft -= 190;
-    };  
+    }; 
