@@ -98,7 +98,6 @@
     /* color: #fff; */
     /* padding-top: .5em; */
     /* font-weight: 100; */
-
     font-size: 270%;
     display: flex;
     justify-content: center;
@@ -182,7 +181,7 @@ content: "\f185";
     /* background-color: #c471ed; */
     color: #00ecfdd7;
     width: 90%;
-    
+
     font-family: 'Nunito', sans-serif;
     padding-top: 8px;
     text-shadow: 3px -3px 0px rgba(85, 85, 85, 0.431);
@@ -476,14 +475,18 @@ content: "\f185";
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.657);
-    margin-top: 100px;
+    margin-top: 105px;
+    border-radius: 2px;
 }
 
-.dropdown-content button{
-    width: 55px;
-    height: 25px;
+.dropdown-content .btnSave{
+    width: 60px;
+    height: 35px;
     float: right;
     cursor: pointer;
+
+    display: flex;
+    align-items: center;
 }
 
 .dropdown-content input {
@@ -513,7 +516,7 @@ content: "\f185";
     height: 1650px;
     margin-left: 170px;
     margin-right: 170px;
-    padding-top: 30px;
+    padding-top: 36.5px;
     /* padding: 0px 10px 0px 10px; */
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
@@ -864,8 +867,8 @@ svg{
 
 a:-webkit-any-link {
     cursor: pointer;
-    /* color: -webkit-link; */
-    /* text-decoration: underline; */
+    /* color: -webkit-link;
+    text-decoration: underline; */
 }
 
 .miniMap{
