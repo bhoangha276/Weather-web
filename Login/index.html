@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <title>Login/Sign Up Form</title>
+  <link rel="shortcut icon" href="/alo.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+  <div class="background-image">
+  
+  <img src="" alt="">
+  <div class="container">
+    <form class="form" id="login">
+      <h1 class="form__title">Login</h1>
+      <div class="form__message form__message--error"></div>
+      <div class="form__input-group">
+        <input type="text" class="form__input" id="name2" autofocus placeholder="Username or Email" />
+        <div class="form__input-error-message"></div>
+      </div>
+      <div class="form__input-group">
+        <input type="password" class="form__input" id="pass2" autofocus placeholder="Password" />
+        <div class="form__input-error-message"></div>
+      </div>
+      <button class="form__button" id="loginBtn" type="button" onclick="check()" value="Login">Login</button>
+
+      <p class="form__text">
+        <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+      </p>
+    </form>
+
+    
+    <form class="form form--hidden" id="createAccount">
+      <h1 class="form__title">Create Account</h1>
+      <div class="form__message form__message--error"></div>
+      <div class="form__input-group">
+        <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username" />
+        <div class="form__input-error-message"></div>
+      </div>
+      <div class="form__input-group">
+        <input type="email" id="femail" class="form__input" autofocus placeholder="Email Address" />
+        <div class="form__input-error-message"></div>
+      </div>
+      <div class="form__input-group">
+        <input type="password" id="pass1" class="form__input" autofocus placeholder="Password" />
+        <p id="password--error" class="form--hidden">Password Doesn't Match</p>
+        <p id="demo"></p>
+        <div></div>
+        <div class="form__input-error-message"></div>
+      </div>
+      <div class="form__input-group">
+        <input type="password" id="confpassword" class="form__input" autofocus placeholder="Confirm password" />
+        <div class="form__input-error-message"></div>
+      </div>
+      <button class="form__button" id="button--success" herf="#" type="button" onclick="store();chkpwd()"  value="Signup">
+        Register
+      </button>
+      <p class="form__text">
+        <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+      </p>
+    </form>
+    
+  </div>
+  
+  
+  <script src="./jquery-3.6.0.js"></script>
+  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="script.js"></script>
+  <script>
+    
+  </script>
+  </div>
+
+</body>
